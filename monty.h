@@ -40,6 +40,7 @@ typedef struct instruction_s
         void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
 
+void operate_function(char *file);
 void (*check_opcodes(void))(stack_t **, unsigned int);
 void pop(stack_t **stack, unsigned int line_cnt);
 

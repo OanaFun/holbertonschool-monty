@@ -5,7 +5,7 @@
  * 
 */
 
-void operate_function()
+void operate_function(char *file)
 {
     
 }
