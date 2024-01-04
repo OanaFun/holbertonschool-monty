@@ -12,12 +12,12 @@ void (*check_opcodes(void))(stack_t **, unsigned int)
     int len_opcode;
 
     instruction_t opcodes[] = {
-        {"push", push},
+       // {"push", push},
         {"pall", pall},
         {"pint", pint},
         {"pop", pop},
-        {"swap", swap},
-        {"nop", nop},
+       // {"swap", swap},
+       // {"nop", nop},
     };
 
     while (opcodes[i].opcode)
