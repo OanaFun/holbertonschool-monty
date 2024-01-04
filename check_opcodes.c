@@ -20,7 +20,7 @@ void (*check_opcodes(void))(stack_t **, unsigned int)
         {"nop", nop},
     };
 
-    while (opcodes[i])
+    while (opcodes[i].opcode)
     {
         j = 0;
         valid_opcode = 1;
