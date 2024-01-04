@@ -12,7 +12,7 @@ void pop(stack_t **stack, unsigned int line_cnt){
 
     stack_t *tmp = NULL;
 
-    if (!stack || !*stack){
+    if (stack == NULL || *stack == NULL){
 
         printf(stderr, "L%u: can't stop pop an empty stack\n", line_cnt);
         status = EXIT_FAILURE;
@@ -22,7 +22,7 @@ void pop(stack_t **stack, unsigned int line_cnt){
     free(*stack);
     *stack = tmp;
 
-    if (!!*stack){
+    if (*stack == NULL){
         return;
     }
     (*stack)->prev = NULL;
