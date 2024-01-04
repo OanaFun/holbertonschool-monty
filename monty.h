@@ -2,8 +2,11 @@
 #define MONTY_H
 
 #include <stdio.h>
-#include <ctype.h>
 #include <stdlib.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <fcntl.h>
+#include <unistd.h>
 #include <string.h>
 
 
@@ -37,7 +40,7 @@ typedef struct instruction_s
         void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
 
-
+void (*check_opcodes(void))(stack_t **, unsigned int);
 void pop(stack_t **stack, unsigned int line_cnt);
 
 #endif
