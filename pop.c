@@ -1,7 +1,7 @@
 #include "monty.h"
 
 /**
-* pop - Function that pop the top of slide
+* pop - Function that remove the top of the stack
 * @stack: stack main
 * @line_cnt: line count
 *
@@ -10,12 +10,12 @@
 
 void pop(stack_t **stack, unsigned int line_cnt){
 
-    staack_t *tmp = NULL;
+    stack_t *tmp = NULL;
 
-    if (!staack || !*staack){
+    if (!stack || !*stack){
 
         printf(stderr, "L%u: can't stop pop an empty stack\n", line_cnt);
-        staatus = EXIT_FAILURE;
+        status = EXIT_FAILURE;
         return;
     }
     tmp = (*stack)->next;
