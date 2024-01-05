@@ -5,9 +5,9 @@
  * @head: struct
  */
 
-void free_stack(stack_t *head)
+void free_stack(stackk_t *head)
 {
-	stack_t *stack;
+	stackk_t *stack;
 
 	while (head)
 	{

@@ -25,7 +25,7 @@ typedef struct stack_s
         int n;
         struct stack_s *prev;
         struct stack_s *next;
-} stack_t;
+} stackk_t;
 
 /**
  * struct instruction_s - opcode and its function
@@ -39,23 +39,23 @@ typedef struct stack_s
 typedef struct instruction_s
 {
         char *opcode;
-        void (*f)(stack_t **stack, unsigned int line_number);
+        void (*f)(stackk_t **stack, unsigned int line_number);
 } instruction_t;
 
 void operate_function(char *file);
-void (*check_opcodes(void))(stack_t **, unsigned int);
+void (*check_opcodes(void))(stackk_t **, unsigned int);
 
 void *_calloc(unsigned int nmemb, unsigned int size);
 char **_split(char *str, char *sep);
 int _atoi(char *str, unsigned int line_number);
-void free_stack(stack_t *head);
+void free_stack(stackk_t *head);
 
-void push(stack_t **stack, unsigned int line_number);
-void pop(stack_t **stack, unsigned int line_number);
-void swap(stack_t **stack, unsigned int line_number);
-void add(stack_t **stack, unsigned int line_number);
+void push(stackk_t **stack, unsigned int line_number);
+void pop(stackk_t **stack, unsigned int line_number);
+void swap(stackk_t **stack, unsigned int line_number);
+void add(stackk_t **stack, unsigned int line_number);
 
-void pall(stack_t **stack, unsigned int line_number);
-void pint(stack_t **stack, unsigned int line_number);
-void nop(stack_t **stack, unsigned int line_number);
+void pall(stackk_t **stack, unsigned int line_number);
+void pint(stackk_t **stack, unsigned int line_number);
+void nop(stackk_t **stack, unsigned int line_number);
 #endif

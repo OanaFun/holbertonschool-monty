@@ -7,13 +7,13 @@
  * @line_number: file line number
 */
 
-void push(stack_t **stack, unsigned int line_number)
+void push(stackk_t **stack, unsigned int line_number)
 {
 	char **split_buff; /* declare a pointer to pointer to char used for splitting*/
 	int num; /*variable to store an integer value */
-	stack_t *new; /* declare a pointer to a stack node */
+	stackk_t *new; /* declare a pointer to a stack node */
 
-	new = malloc(sizeof(stack_t)); /* allocate memory for a new node */
+	new = malloc(sizeof(stackk_t)); /* allocate memory for a new node */
 	if (!new) /* check if malloc failed */
 	{
 		free(new);

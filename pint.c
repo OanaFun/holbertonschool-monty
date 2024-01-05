@@ -6,7 +6,7 @@
  * @line_number: file line number
 */
 
-void pint(stack_t **stack, unsigned int line_number)
+void pint(stackk_t **stack, unsigned int line_number)
 {
 	if (!*stack || !stack)
 	{

@@ -6,9 +6,9 @@
  * @line_number: file line number
  */
 
-void add(stack_t **stack, unsigned int line_number)
+void add(stackk_t **stack, unsigned int line_number)
 {
-	stack_t *head = *stack;
+	stackk_t *head = *stack;
 
 	if (!*stack || !stack || !head->next)
 	{

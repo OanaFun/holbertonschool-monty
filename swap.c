@@ -6,10 +6,10 @@
  * @line_number: file line number
 */
 
-void swap(stack_t **stack, unsigned int line_number)
+void swap(stackk_t **stack, unsigned int line_number)
 {
-	stack_t *head = *stack;
-	stack_t *temp = *stack;
+	stackk_t *head = *stack;
+	stackk_t *temp = *stack;
 
 	if (!*stack || !stack || !head->next)
 	{
