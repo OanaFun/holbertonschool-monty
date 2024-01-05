@@ -47,4 +47,7 @@ void pop(stack_t **stack, unsigned int line_cnt);
 void pall(stack_t **stack, unsigned int line_number);
 void pint(stack_t **stack, unsigned int line_number);
 
+char **_split(char *str, char *sep);
+int _atoi(char *str, unsigned int line_number);
+
 #endif
