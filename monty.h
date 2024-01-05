@@ -22,9 +22,9 @@ char *buff;
  */
 typedef struct stack_s
 {
-        int n;
-        struct stack_s *prev;
-        struct stack_s *next;
+	int n;
+	struct stack_s *prev;
+	struct stack_s *next;
 } stackk_t;
 
 /**
@@ -38,8 +38,8 @@ typedef struct stack_s
 
 typedef struct instruction_s
 {
-        char *opcode;
-        void (*f)(stackk_t **stack, unsigned int line_number);
+	char *opcode;
+	void (*f)(stackk_t **stack, unsigned int line_number);
 } instruction_t;
 
 void operate_function(char *file);

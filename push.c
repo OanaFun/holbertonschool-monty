@@ -1,7 +1,6 @@
 #include "monty.h"
 
 /**
-<<<<<<< HEAD
  * push - add a node into the stack
  * @stack: nodes
  * @line_number: file line number
@@ -9,12 +8,12 @@
 
 void push(stackk_t **stack, unsigned int line_number)
 {
-	char **split_buff; /* declare a pointer to pointer to char used for splitting*/
-	int num; /*variable to store an integer value */
-	stackk_t *new; /* declare a pointer to a stack node */
+	char **split_buff;
+	int num;
+	stackk_t *new;
 
-	new = malloc(sizeof(stackk_t)); /* allocate memory for a new node */
-	if (!new) /* check if malloc failed */
+	new = malloc(sizeof(stackk_t));
+	if (!new)
 	{
 		free(new);
 		dprintf(STDERR_FILENO, "Error: malloc failed\n");
@@ -23,15 +22,15 @@ void push(stackk_t **stack, unsigned int line_number)
 
 	split_buff = _split(buff, " ");
 
-	num = _atoi(split_buff[1], line_number); /* convert the string at index 1 of 'split_buff' to an integer */
-	new->n = num; /* store the integer 'num' in the 'n' field of the new node */
-	new->prev = NULL; /* set the 'prev' field of the new node to NULL */
-	new->next = *stack; /* set the 'next' field of the new node to the current stack */
+	num = _atoi(split_buff[1], line_number);
+	new->n = num;
+	new->prev = NULL;
+	new->next = *stack;
 
 	if (*stack)
-		(*stack)->prev = new; /*update 'prev' field of the current top node */
+		(*stack)->prev = new;
 
-	*stack = new; /* update the stack to point to the new node */
+	*stack = new;
 
 	free(split_buff);
 }

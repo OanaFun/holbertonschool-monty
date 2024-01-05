@@ -10,7 +10,7 @@
 
 void pop(stackk_t **stack, unsigned int line_number)
 {
-    stackk_t *delete = *stack;
+	stackk_t *delete = *stack;
 
 	if (!*stack || !stack)
 	{

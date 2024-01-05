@@ -7,7 +7,7 @@
 
 void operate_function(char *file)
 {
-    FILE *fd;
+	FILE *fd;
 	size_t read_size = 0;
 	void (*opcode_func)(stackk_t **, unsigned int);
 	int line_number = 1;
