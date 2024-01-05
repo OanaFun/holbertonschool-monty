@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #include "monty.h"
 
 /**
@@ -39,5 +40,7 @@ void push(stack_t **stack, unsigned int line_number)
  * 
  * 
 */
+=======
+>>>>>>> ede26c0ef896a6e3a446fdaf4a6f65931b50f51a
 
 >>>>>>> 3b0fe1a427c746c391a6414e3fb389bc83cec43f
