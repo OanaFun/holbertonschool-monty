@@ -51,5 +51,5 @@ void nop(stack_t **stack, unsigned int line_number);
 
 char **_split(char *str, char *sep);
 int _atoi(char *str, unsigned int line_number);
-
+void *_calloc(unsigned int nmemb, unsigned int size);
 #endif

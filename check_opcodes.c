@@ -17,7 +17,7 @@ void (*check_opcodes(void))(stack_t **, unsigned int)
         {"pint", pint},
         {"pop", pop},
        // {"swap", swap},
-       // {"nop", nop},
+        {"nop", nop},
     };
 
     while (opcodes[i].opcode)
