@@ -8,22 +8,25 @@
 * Return: void
 */
 
-void pop(stack_t **stack, unsigned int line_number){
+void pop(stack_t **stack, unsigned int line_number)
+{
+    stack_t *delete = *stack;
 
-    stack_t *tmp = NULL;
+	if (!*stack || !stack)
+	{
+		dprintf(STDERR_FILENO, "L%i: can't pop an empty stack\n", line_number);
+		exit(EXIT_FAILURE);
+	}
 
-    if (stack == NULL || *stack == NULL){
-
-        printf(stderr, "L%u: can't stop pop an empty stack\n", line_number);
-        status = EXIT_FAILURE;
-        return;
-    }
-    tmp = (*stack)->next;
-    free(*stack);
-    *stack = tmp;
-
-    if (*stack == NULL){
-        return;
-    }
-    (*stack)->prev = NULL;
+	if ((*stack)->next)
+	{
+		*stack = delete->next;
+		(*stack)->prev = NULL;
+		free(delete);
+	}
+	else
+	{
+		free(*stack);
+		*stack = NULL;
+	}
 }

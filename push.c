@@ -1,6 +1,7 @@
 #include "monty.h"
 
 /**
+<<<<<<< HEAD
  * push - add a node into the stack
  * @stack: nodes
  * @line_number: file line number
@@ -34,3 +35,9 @@ void push(stack_t **stack, unsigned int line_number)
 
 	free(split_buff);
 }
+=======
+ * 
+ * 
+*/
+
+>>>>>>> 3b0fe1a427c746c391a6414e3fb389bc83cec43f
