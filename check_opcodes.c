@@ -1,7 +1,8 @@
 #include "monty.h"
 
 /**
- * 
+ * check_opcodes - checks a valid opcode in the line
+ * Return: opcode
 */
 
 void (*check_opcodes(void))(stack_t **, unsigned int)
@@ -18,6 +19,7 @@ void (*check_opcodes(void))(stack_t **, unsigned int)
         {"pop", pop},
         {"swap", swap},
         {"nop", nop},
+        {NULL, NULL}
     };
 
     while (opcodes[i].opcode)
